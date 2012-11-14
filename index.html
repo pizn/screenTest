@@ -1,66 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Screentest by pizn</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Screentest</h1>
-        <p>在 web 页面测试 iphone 或者 ipad 的网页。</p>
-
-        <p class="view"><a href="https://github.com/pizn/screenTest">View the Project on GitHub <small>pizn/screenTest</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/pizn/screenTest/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/pizn/screenTest/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/pizn/screenTest">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/pizn">pizn</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+<head>
+    <meta charset="utf-8" />
+    <title>screenTest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <style type="text/css">
+        * {
+            margin: 0 0;
+            padding:  0 0;
+        }
+        #head {
+            height: 40px;
+            width: 100%;
+            background: #000;
+            color: #fafafa;
+            text-align: center;
+            font-size: 18px;
+            line-height: 40px;
+            font-family: Georgia;
+        }
+        #input {
+            width: 100%;
+            margin: 0 auto;
+            height: 30px;
+        }
+        a, a:hover {
+            color:#000;
+            border-bottom: 1px solid #dedede;
+            text-decoration: none;
+        }
+        #content {
+            width: 100%;
+        }
+        #iphone5, #ipad {
+            position: relative;
+            left: 50%;
+        }
+        #iphone5 { width: 500px; margin-left: -250px;}
+        #ipad { width: 1400px; margin-left: -700px;}
+        #window {
+            position: absolute;
+                width: 335px;
+                height: 568px;
+                top: 170px;
+                left: 38px;
+        }
+            #window2 {
+                position: absolute;
+                width: 1039px;
+                height: 780px;
+                top: 120px;
+                left: 151px;
+            }
+        #foot {
+            height: 120px;
+            width: 100%;
+            border-top: 1px solid #d8d8d8;
+            background: #e8e8e8;
+            font-family: Georgia;
+            text-align: center;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+<div id="head">
+    <h1>screenTest</h1>
+</div>
+<div id="content">
+    <div id="input">
+        <label>Site Url:</label>
+        <input id="site" type="text" value=""/>
+        <a href="#" id="show">Test</a>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+    <div id="iphone5">
+            <img src="images/iphone5.png" style="width:405px;"/>
+            <iframe id="window" src="http://www.pizn.me/blogTheme/" width="320" height="560" frameborder="0">
+
+            </iframe>
+        </div>
+
+        <div id="ipad">
+            <img src="images/ipad_03.png" style="width:1354px;"/>
+            <iframe id="window2" src="http://www.pizn.net" width="1024" height="780" frameborder="0">
+
+            </iframe>
+        </div>
+</div>
+<div id="foot">
+    <p>Design by <a href="http://www.pizn.net" title="PIZn">PIZn</a></p>
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    $("#show").click(function(e) {
+        e.stopPropagation();
+        var url = $("#site").val();
+        $("#window").attr('src', url);
+        $("#window2").attr('src', url);
+    })
+</script>
+</body>
 </html>
