@@ -1,0 +1,97 @@
+/*
+ * @name: screenTest style
+ * @author: zhanxin lin
+ * @desc: 用来测试 iPhone 和 iPad 页面的效果
+ * @site: www.pizn.net
+ */
+body {
+    background: url(../img/bg.jpg) no-repeat 0 center;
+}
+.container-fluid {
+    padding: 0 0;
+}
+#aside {
+    position: fixed;
+    width: 230px;
+    height: 800px;
+    background: #fff;
+    top: 0;
+    left: 0;
+    border-radius: 0 5px 0 0;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, .2);
+    padding: 60px 50px;
+}
+.logo {
+    width: 230px;
+    height: 80px;
+}
+/*************************
+ * violet logo
+*************************/
+.violet-logo {  position: relative; width: 66px; height: 66px; margin: 20px auto 12px auto; -moz-border-radius: 33px 33px; -webkit-border-radius: 33px 33px; -o-border-radius: 33px 33px; border-radius: 33px 33px; }
+.v-position-1, .v-position-2, .v-position-3, .v-position-4, .v-position-5, .v-position-6, .v-position-7 { position: absolute; }
+.violet-logo .v-position-1 { top: 0; left: 23px;}
+.violet-logo .v-position-2 { top: 9px; right: 6px; }
+.violet-logo .v-position-3 { bottom: 9px; right: 6px; }
+.violet-logo .v-position-4 { bottom: 0; left: 23px; }
+.violet-logo .v-position-5 { bottom: 9px; left: 6px; }
+.violet-logo .v-position-6 { top: 9px; left: 6px;}
+.violet-logo .v-petal { position: relative; width: 20px; height: 28px; }
+.v-deg-0 { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+.v-deg-60 { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -o-transform: rotate(60deg); transform: rotate(60deg); }
+.v-deg-120 { -webkit-transform: rotate(120deg); -moz-transform: rotate(120deg); -o-transform: rotate(120deg); transform: rotate(120deg); }
+.v-deg-180 { -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg); }
+.v-deg-240 { -webkit-transform: rotate(-120deg); -moz-transform: rotate(-120deg); -o-transform: rotate(-120deg); transform: rotate(-120deg); }
+.v-deg-300 { -webkit-transform: rotate(-60deg); -moz-transform: rotate(-60deg); -o-transform: rotate(-60deg); transform: rotate(-60deg); }
+.v-color-1 .v-petal-top, .v-color-1 .v-petal-left-det, .v-color-1 .v-petal-right-det { background: #525252; }
+.v-color-2 .v-petal-top, .v-color-2 .v-petal-left-det, .v-color-2 .v-petal-right-det { background: #525252; }
+.v-color-3 .v-petal-top, .v-color-3 .v-petal-left-det, .v-color-3 .v-petal-right-det { background: #525252; }
+.v-color-4 .v-petal-top, .v-color-4 .v-petal-left-det, .v-color-4 .v-petal-right-det { background: #525252; }
+.v-color-5 .v-petal-top, .v-color-5 .v-petal-left-det, .v-color-5 .v-petal-right-det { background: #525252; }
+.v-color-6 .v-petal-top, .v-color-6 .v-petal-left-det, .v-color-6 .v-petal-right-det { background: #525252; }
+.v-petal-left, .v-petal-right { position: absolute; top: 8px; height: 20px; overflow: hidden;}
+.v-petal-left { left: 0; width: 11px; }
+.v-petal-right { right: 0px; width: 10px; }
+.v-petal-top, .v-petal-left-det, .v-petal-right-det { position: absolute; width: 20px; }
+.v-petal-top { top: 0; right: 0; height: 10px; -moz-border-radius: 9px 9px 0 0; -webkit-border-radius: 9px 9px 0 0; -o-border-radius: 9px 9px 0 0; border-radius: 9px 9px 0px 0px; }
+.v-petal-left-det { left: 0; height: 20px; -moz-border-radius: 0 0 0 20px; -webkit-border-radius: 0 0 0 20px; -o-border-radius: 0 0 0 20px; border-radius: 0 0 0 20px; }
+.v-petal-right-det { right: 0; height: 20px; -moz-border-radius: 0 0 20px 0; -webkit-border-radius: 0 0 20px 0; -o-border-radius: 0 0 20px 0; border-radius: 0px 0px 20px 0px; }
+
+#aside h1 {
+    font-size: 1.4em;
+    text-align: center;
+    font-family: Georgia;
+    font-weight: normal;
+    color:#808080;
+    margin-bottom: 1em;
+}
+#screen {
+    margin-left: 300px;
+    height: 890px;
+}
+#iPhone {
+    margin-left: 200px;
+    position: relative;
+    height: 890px;
+    overflow:  hidden;
+}
+#window {
+    height: 568px;
+    left: 39px;
+    position: absolute;
+    top: 173px;
+    width: 335px;
+}
+#foot {
+    width: 330px;
+    padding: 10px 0;
+    border-top: 1px solid #dedede;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+#foot a {
+    color: #808080;
+    font-family: georgia;
+}

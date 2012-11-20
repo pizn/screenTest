@@ -2,108 +2,150 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>screenTest</title>
+    <title>响应式测试 - ScreenTest</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <style type="text/css">
-        * {
-            margin: 0 0;
-            padding:  0 0;
-        }
-        #head {
-            height: 40px;
-            width: 100%;
-            background: #000;
-            color: #fafafa;
-            text-align: center;
-            font-size: 18px;
-            line-height: 40px;
-            font-family: Georgia;
-        }
-        #input {
-            width: 100%;
-            margin: 0 auto;
-            height: 30px;
-        }
-        a, a:hover {
-            color:#000;
-            border-bottom: 1px solid #dedede;
-            text-decoration: none;
-        }
-        #content {
-            width: 100%;
-        }
-        #iphone5, #ipad {
-            position: relative;
-            left: 50%;
-        }
-        #iphone5 { width: 500px; margin-left: -250px;}
-        #ipad { width: 1400px; margin-left: -700px;}
-        #window {
-            position: absolute;
-                width: 335px;
-                height: 568px;
-                top: 170px;
-                left: 38px;
-        }
-            #window2 {
-                position: absolute;
-                width: 1039px;
-                height: 780px;
-                top: 120px;
-                left: 151px;
-            }
-        #foot {
-            height: 120px;
-            width: 100%;
-            border-top: 1px solid #d8d8d8;
-            background: #e8e8e8;
-            font-family: Georgia;
-            text-align: center;
-            padding: 40px 0;
-        }
-    </style>
+    <meta name="description" content="响应式测试，兼容 iphone 和 ipad 不同分辨率">
+    <meta name="author" content="zhanxin lin">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div id="head">
-    <h1>screenTest</h1>
-</div>
-<div id="content">
-    <div id="input">
-        <label>Site Url:</label>
-        <input id="site" type="text" value=""/>
-        <a href="#" id="show">Test</a>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <aside id="aside">
+            <div class="logo">
+                <div class="violet-logo">
+                    <div class="v-position-1">
+                        <div class="v-petal v-deg-0 v-color-1">
+                            <div class="v-petal-top">
+                            </div>
+                            <div class="v-petal-left">
+                                <div class="v-petal-left-det">
+                                </div>
+                            </div>
+                            <div class="v-petal-right">
+                                <div class="v-petal-right-det">
+                                </div>
+                            </div>
+                        </div><!-- v-petal -->
+                    </div>
+                    <div class="v-position-2">
+                        <div class="v-petal v-deg-60 v-color-2">
+                            <div class="v-petal-top">
+                            </div>
+                            <div class="v-petal-left">
+                                <div class="v-petal-left-det">
+                                </div>
+                            </div>
+                            <div class="v-petal-right">
+                                <div class="v-petal-right-det">
+                                </div>
+                            </div>
+                        </div><!-- v-petal -->
+                    </div>
+                    <div class="v-position-3">
+                        <div class="v-petal v-deg-120 v-color-3">
+                            <div class="v-petal-top">
+                            </div>
+                            <div class="v-petal-left">
+                                <div class="v-petal-left-det">
+                                </div>
+                            </div>
+                            <div class="v-petal-right">
+                                <div class="v-petal-right-det">
+                                </div>
+                            </div>
+                        </div><!-- v-petal -->
+                    </div>
+                    <div class="v-position-4">
+                        <div class="v-petal v-deg-180 v-color-4">
+                            <div class="v-petal-top">
+                            </div>
+                            <div class="v-petal-left">
+                                <div class="v-petal-left-det">
+                                </div>
+                            </div>
+                            <div class="v-petal-right">
+                                <div class="v-petal-right-det">
+                                </div>
+                            </div>
+                        </div><!-- v-petal -->
+                    </div>
+                    <div class="v-position-5">
+                        <div class="v-petal v-deg-240 v-color-5">
+                            <div class="v-petal-top">
+                            </div>
+                            <div class="v-petal-left">
+                                <div class="v-petal-left-det">
+                                </div>
+                            </div>
+                            <div class="v-petal-right">
+                                <div class="v-petal-right-det">
+                                </div>
+                            </div>
+                        </div><!-- v-petal -->
+                    </div>
+                    <div class="v-position-6">
+                        <div class="v-petal v-deg-300 v-color-6">
+                            <div class="v-petal-top">
+                            </div>
+                            <div class="v-petal-left">
+                                <div class="v-petal-left-det">
+                                </div>
+                            </div>
+                            <div class="v-petal-right">
+                                <div class="v-petal-right-det">
+                                </div>
+                            </div>
+                        </div><!-- v-petal -->
+                    </div>
+                </div>
+            </div>
+            <h1>screenTest</h1>
+            <div class="input-append">
+              <input class="input-medium" id="appendedInputButton" type="text" placeholder="http://www.pizn.net">
+
+              <a href="#myModal" role="button"  id="J-view" class="btn btn-inverse" data-toggle="modal">Done</a>
+            </div>
+        </aside>
+        <div class="span9" id="screen">
+            <div id="iPhone">
+                <img src="img/iphone5.png" width="408" />
+                <iframe width="320" height="560" frameborder="0" src="http://www.pizn.net/" id="window"></iframe>
+            </div>
+            <!-- Button to trigger modal -->
+        </div>
+        <footer id="foot">
+            <a href="http://www.pizn.net" target="_blank">PIZn</a> / <a href="https://www.github.com/pizn/screenTest" terget="_blank">screenTest Beta 0.1</a>
+        </footer>
     </div>
-    <div id="iphone5">
-            <img src="images/iphone5.png" style="width:405px;"/>
-            <iframe id="window" src="http://www.pizn.me/blogTheme/" width="320" height="560" frameborder="0">
-
-            </iframe>
-        </div>
-
-        <div id="ipad">
-            <img src="images/ipad_03.png" style="width:1354px;"/>
-            <iframe id="window2" src="http://www.pizn.net" width="1024" height="780" frameborder="0">
-
-            </iframe>
-        </div>
 </div>
-<div id="foot">
-    <p>Design by <a href="http://www.pizn.net" title="PIZn">PIZn</a></p>
-</div>
-
+<!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">天啊！</h3>
+      </div>
+      <div class="modal-body">
+        <div class="alert">
+          您输入的地址错误！请输入: <code>http://</code> 或者 <code>https://</code>
+        </div>
+      </div>
+    </div>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
-    $("#show").click(function(e) {
+    $("#J-view").click(function(e) {
         e.stopPropagation();
-        var url = $("#site").val();
-        $("#window").attr('src', url);
-        $("#window2").attr('src', url);
+        var rule = /^(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/;
+        var url = $("#appendedInputButton").val();
+        if(!rule.test(url)) {
+            $('#myModal').modal('show');
+        } else {
+            $("#window").attr('src', url);
+        }
     })
 </script>
-<div style="display:none;">
-<script src="http://s95.cnzz.com/stat.php?id=4755172&web_id=4755172" language="JavaScript"></script>
-</div>
+
 </body>
 </html>
